@@ -1,0 +1,57 @@
+@use '../mixin/' as f;
+
+@media screen and (min-width:950px){
+    body{
+        @include f.flex(flex,row,center,center);
+        min-height: 100vh;
+        background-image: url('/images/bg-intro-desktop.png');
+        overflow: hidden
+    }
+    .container{
+        @include f.flex(flex,row,center,center);
+        gap: 3em;
+        max-width: 1440px;
+        margin: 1em 5em;
+    }
+
+    .form{
+        padding-bottom: 3em;
+    }
+
+    .form__container{
+        gap: 1em
+    }
+
+    .texts{
+        @include f.flex(flex,column,null,null);
+        text-align: left;
+        gap: 2em;
+        &__title{
+            font-size: 3rem;
+        }
+        &__subtitle{
+            font-size: 1rem;
+        }
+    }
+
+
+    .content{
+        max-width: 600px;
+        min-width: 450px;
+    }
+
+    .content__button{
+        width: 100%;
+        max-width: none;
+        padding: 1.1em;
+    }
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,37 @@
+@use '../mixin/' as f;
+
+
+
+body{
+    @include f.flex(flex,column,flex-start,center);
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    background-image: url('/images/bg-intro-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.container{
+    @include f.flex(flex,column,center,center);
+    gap: 3em;
+    max-width: 600px;
+    margin: 6em 1em;
+    padding: 1em
+}
+
+.texts{
+    @include f.flex(flex,column,null,null);
+    text-align: center;
+    gap: 1em;
+    &__title{
+        font-size: 1.8rem;
+    }
+    &__subtitle{
+        font-size: .9rem;
+        line-height: 2;
+    }
+}
+

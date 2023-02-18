@@ -1,0 +1,109 @@
+@use '../mixin/' as f;
+
+.content{
+    width: 100%;
+    max-width: 600px;
+    @include f.flex(flex,column,center,center);
+    gap: 2em;
+
+    &__price{
+        text-align: center;
+        width: 100%;
+    }
+    &__button{
+        width: 100%;
+        max-width: 380px;
+        text-align: center;
+        padding: .5em 4em;
+        background-color: var(--bg-button);
+        border: none;
+        line-height: 2;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+    &__button:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+        background: linear-gradient(90deg, rgba(93,84,163,1) 0%, rgb(66, 57, 136) 66%, rgba(102,94,171,1) 100%);
+    }
+}
+
+
+.form{
+    width: 100%;
+    min-width: 300px;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px -6px rgba(0,0,0,0.75);
+    &__container{
+        gap: 0.6em;
+
+        @include f.flex(flex,column,null,null);
+    }
+    &__group{
+        position: relative;
+    }
+
+    input{
+        width: 100%;
+        height: 50px;
+        padding: 1em;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        border: solid rgb(0, 0, 0, 0.2) 1px;
+    }
+    ::placeholder{
+        color: #000;
+        font-weight: 700;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .img__error{
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .form__incorrect{
+        color: var(--bg-color);
+        font-size: 0.7rem;
+        text-align: right;   
+    }
+
+    .form__button{
+        background-color: var(--bg-submit);
+        border: none;
+        padding: 1em;
+        height: 50px;
+        margin-top: 1em;
+        text-transform: uppercase;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+
+    .form__button:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+        background: linear-gradient(90deg, rgba(55,204,138,1) 0%, rgba(45,172,116,1) 66%, rgba(33,233,145,1) 100%);
+    }
+
+    .form__conditions{
+        text-align: center;
+        color: #D9D9DC;
+        font-size: 0.8rem;
+    }
+
+    .form__span{
+        color: var(--bg-color);
+    }
+    .form__span{
+        cursor: pointer;
+    }
+}
