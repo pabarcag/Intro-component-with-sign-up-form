@@ -40,8 +40,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Github code](https://github.com/pabarcag/ping-simple-page)
-- Live Site URL: [Live site](https://pabarcag.github.io/ping-simple-page/)
+- Solution URL: [Github code](https://github.com/pabarcag/Intro-component-with-sign-up-form)
+- Live Site URL: [Live site](https://pabarcag.github.io/Intro-component-with-sign-up-form/)
 
 
 ## My process
