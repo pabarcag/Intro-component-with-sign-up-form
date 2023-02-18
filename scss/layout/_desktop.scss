@@ -4,7 +4,7 @@
     body{
         @include f.flex(flex,row,center,center);
         min-height: 100vh;
-        background-image: url('/images/bg-intro-desktop.png');
+        background-image: url('./images/bg-intro-desktop.png');
         overflow: hidden
     }
     .container{
